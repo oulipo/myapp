@@ -1,0 +1,29 @@
+EXERCICES :
+1- créer un composant "inverse" qui permet à l'utilisateur de saisir un mot ou une phrase dans un champ input et qui affiche immédiatement l'inverse à l'écran
+ex : 
+
+teuqorrep
+[perroquet]
+
+2- créer un composant imc (indice de masse corporelle ; https://fr.wikipedia.org/wiki/Indice_de_masse_corporelle); 
+- créer un formulaire de saisie pour les champs masse et taille
+- utiliser la formule imc = masse / taille²
+- afficher l'interprétation à l'utilisateur
+
+3- créer un composant conversion F<-->C (https://fr.wikipedia.org/wiki/Degr%C3%A9_Fahrenheit)
+[XXX F]  [YYY C] [Conversion]
+
+
+---------------------------------------------------------------
+4- créer un composant todolist
+
+* lait [x]
+
+[       ](ajouter)
+
+5- créer un composant chuck norris facts
+https://api.chucknorris.io/
+
+service
+
+

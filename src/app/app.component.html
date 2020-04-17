@@ -1,8 +1,21 @@
-<nav>
-  <ul>
-    <li><a href="#" routerLink="/">Accueil</a></li>
-    <li><a href="#" routerLink="/clients">Clients</a></li>
-    <li><a href="#" routerLink="/compteur">Compteur</a></li>
-  </ul>
-</nav>
-<router-outlet></router-outlet>
+<ul class="nav">
+  <li class="nav-item">
+    <a class="nav-link active" href="#" routerLink="/">Accueil</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#" routerLink="/clients">Clients</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#" routerLink="/compteur">Compteur</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#" routerLink="/bonjour">Bonjour</a>
+  </li>
+</ul>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
