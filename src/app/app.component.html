@@ -1,21 +1,59 @@
-<ul class="nav">
-  <li class="nav-item">
-    <a class="nav-link active" href="#" routerLink="/">Accueil</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#" routerLink="/clients">Clients</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#" routerLink="/compteur">Compteur</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#" routerLink="/bonjour">Bonjour</a>
-  </li>
-</ul>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <router-outlet></router-outlet>
-    </div>
+<section class="section">
+  <div class="container">
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="https://angular.io">
+          <img src="https://angular.io/assets/images/logos/angular/angular.svg" height="128" width="127">
+        </a>
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+          data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item" routerLink="/">
+            Accueil
+          </a>
+
+          <a class="navbar-item" routerLink="/compteur">
+            Compteur
+          </a>
+          <a class="navbar-item" routerLink="/reverse">
+            Reverse
+          </a>
+          <a class="navbar-item" routerLink="/imc">
+            IMC
+          </a>
+          <a class="navbar-item" routerLink="/todolist">
+            Todolist
+          </a>
+          <a class="navbar-item" routerLink="/chuck">
+            Chuck
+          </a>
+
+        </div>
+
+      </div>
+    </nav>
+
+    <router-outlet></router-outlet>
   </div>
-</div>
+</section>
+<!-- <div class="container">
+  <nav>
+    <a class="nav-link active" href="#" routerLink="/">Accueil</a>
+    <a class="nav-link" href="#">Compteur</a>
+    <a class="nav-link" href="#">Reverse</a>
+    <a class="nav-link" href="#">IMC</a>
+    <a class="nav-link" href="#">Conversion</a>
+    <a class="nav-link" href="#">Todolist</a>
+    <a class="nav-link" href="#">Chuck</a>
+  </nav>
+  <div class="notification">
+    <router-outlet></router-outlet>
+  </div>
+</div> -->

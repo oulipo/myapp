@@ -1,19 +1,18 @@
-<!-- <h1 [ngStyle]="{ 
-    'color':  compteur >= 10 ? 'red' : 'black', 
-    'background-color': compteur < 0 ? 'blue' : 'white' }">{{ compteur }}</h1> -->
+<h2 class="title is-2">Exercice : compteur</h2>
+<div class="notification is-size-1 is-info" [ngClass]="classes()">
+    <div>{{ compteur }}</div>
+    <ng-template [ngIf]="compteur >= 30">
+        <div>Au dessus ou égal à 30</div>
+    </ng-template>
+    <ng-template [ngIf]="compteur >= 0 && compteur < 30">
+        <div>Nombre entre 0 et 30</div>
+    </ng-template>
+    <ng-template [ngIf]="compteur < 0">
+        <div>nombre négatif...</div>
+    </ng-template>
+</div>
 
-<!-- <h1 [class.chaud]="compteur >= 10">{{ compteur }}</h1> -->
-
-<h1 [ngClass]="classes()">{{ compteur }}</h1>
-<ng-template [ngIf]="compteur >= 30"><div>Il fait chaud</div></ng-template>
-<ng-template [ngIf]="compteur >= 0 && compteur < 30"><div>Conditions normales</div></ng-template>
-<ng-template [ngIf]="compteur < 0"><div>Il fait froid</div></ng-template>
-
-<button (click)="decrementeCompteur()">-</button>
-
-<button (click)="incrementeCompteur()">+</button>
-
-
-<ul>
-    <li *ngFor="let article of liste ; let index = index" (click)="toggleDone(index)" [class.done]="article.isDone">{{ article.libelle }}</li>
-</ul>
+<div class="buttons">
+    <button class="button is-link" (click)="addCompteur(-1)">DEC 1</button>
+    <button class="button is-link" (click)="addCompteur(1)">INC 1</button>
+</div>

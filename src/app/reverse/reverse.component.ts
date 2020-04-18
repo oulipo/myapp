@@ -8,10 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ReverseComponent implements OnInit {
 
   phrase: string = '';
-  inverse: string = this.phrase.split('').reverse().join('');
-
   
-
   constructor() { }
 
   ngOnInit(): void {

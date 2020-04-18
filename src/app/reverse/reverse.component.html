@@ -1,2 +1,10 @@
-<h2>{{ inverse }}</h2>
-<input type="text" [(ngModel)]="phrase" (keyup)="inverser()">
+<h2 class="title is-2">Exercice : inverser l'ordre des lettres</h2>
+<div class="notification is-info">
+    {{ phrase | reverse }}
+</div>
+
+<div class="field">
+    <div class="control">
+        <input class="input is-primary" type="text" [(ngModel)]="phrase" placeholder="écrire quelque chose...">
+    </div>
+</div>

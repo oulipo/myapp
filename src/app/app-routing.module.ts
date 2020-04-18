@@ -5,13 +5,17 @@ import { ClientsComponent } from './clients/clients.component';
 import { CompteurComponent } from './compteur/compteur.component';
 import { BonjourComponent } from './bonjour/bonjour.component';
 import { ReverseComponent } from './reverse/reverse.component';
+import { ImcComponent } from './imc/imc.component';
+import { TodolistComponent } from './todolist/todolist.component';
+import { ChuckComponent } from './chuck/chuck.component';
 
 const routes: Routes = [
   { path: '', component: AccueilComponent },
-  { path: 'clients', component: ClientsComponent},
   { path: 'compteur', component: CompteurComponent},
-  { path: 'bonjour', component: BonjourComponent},
   { path: 'reverse', component: ReverseComponent},
+  { path: 'imc', component: ImcComponent},
+  { path: 'todolist', component:TodolistComponent},
+  { path: 'chuck', component: ChuckComponent},
 ];
 
 @NgModule({

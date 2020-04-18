@@ -10,6 +10,9 @@ import { CompteurComponent } from './compteur/compteur.component';
 import { BonjourComponent } from './bonjour/bonjour.component';
 import { ImcComponent } from './imc/imc.component';
 import { ReverseComponent } from './reverse/reverse.component';
+import { ReversePipe } from './reverse.pipe';
+import { TodolistComponent } from './todolist/todolist.component';
+import { ChuckComponent } from './chuck/chuck.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { ReverseComponent } from './reverse/reverse.component';
     CompteurComponent,
     BonjourComponent,
     ImcComponent,
-    ReverseComponent
+    ReverseComponent,
+    ReversePipe,
+    TodolistComponent,
+    ChuckComponent
   ],
   imports: [
     BrowserModule,

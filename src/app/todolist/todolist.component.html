@@ -1,0 +1,7 @@
+<h2 class="title is-2">Exercice : Todolist</h2>
+<ul *ngIf="todos">
+    <li [class.done]="todo.isDone" *ngFor="let todo of todos ; let index = index"><span (click)="toggleTodo(index)">{{ todo.libelle }}</span> -- <span (click)="deleteTodo(index)">supprimer</span></li>
+</ul>
+
+<input type="text" [(ngModel)]="todo">
+<button (click)="addTodo()">ajouter</button>

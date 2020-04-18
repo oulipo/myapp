@@ -1,1 +1,62 @@
-<!-- // todo -->
+<h2 class="title is-2">Exercice : IMC</h2>
+<div class="notification is-size-1 is-info">
+    <!--
+Interprétation de l’IMC (https://fr.wikipedia.org/wiki/Indice_de_masse_corporelle)
+IMC (kg m^−2)
+Interprétation
+moins de 16,5	dénutrition ou anorexie
+16,5 à 18,5	maigreur
+18,5 à 25	poids normal
+25 à 30	surpoids
+30 à 35	obésité modérée
+35 à 40	obésité sévère
+plus de 40	obésité morbide ou massive -->
+    <div>{{ calculerIMC() }}</div>
+    <ng-template [ngIf]="imc < 16.5">
+        <div>dénutrition ou anorexie</div>
+    </ng-template>
+    <ng-template [ngIf]="imc >= 16.5 && imc < 18.5">
+        <div>maigreur</div>
+    </ng-template>
+    <ng-template [ngIf]="imc >= 18.5 && imc < 25">
+        <div>poids normal</div>
+    </ng-template>
+    <ng-template [ngIf]="imc >= 25 && imc < 30">
+        <div>surpoids</div>
+    </ng-template>
+    <ng-template [ngIf]="imc >= 30 && imc < 35">
+        <div>obésité modérée</div>
+    </ng-template>
+    <ng-template [ngIf]="imc >= 35 && imc < 40">
+        <div>obésité sévère</div>
+    </ng-template>
+    <ng-template [ngIf]="imc >= 40">
+        <div>obésité morbide ou massive</div>
+    </ng-template>
+</div>
+
+<div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Masse (kg)</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <p class="control">
+          <input class="input" type="number" [(ngModel)]="masse">
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="field is-horizontal">
+    <div class="field-label is-normal">
+      <label class="label">Taille (m)</label>
+    </div>
+    <div class="field-body">
+      <div class="field">
+        <p class="control">
+          <input class="input" type="number" [(ngModel)]="taille">
+        </p>
+      </div>
+    </div>
+  </div>
