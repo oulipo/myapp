@@ -9,9 +9,10 @@
     <h3 class="is-size-3">{{ categorie | uppercase }}</h3>
     <ul *ngIf="facts">
         <li *ngFor="let fact of facts.result">
-            <div class="notification" style="margin-bottom: 1rem;">
+            <!-- <div class="notification" style="margin-bottom: 1rem;">
                 <strong>{{ fact.value }}</strong>
-              </div>
+            </div> -->
+            <app-fact-detail [myfact]="fact.value"></app-fact-detail>
         </li>
     </ul>
 </div>

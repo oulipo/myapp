@@ -14,6 +14,7 @@ import { ReversePipe } from './reverse.pipe';
 import { TodolistComponent } from './todolist/todolist.component';
 import { ChuckComponent } from './chuck/chuck.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FactDetailComponent } from './fact-detail/fact-detail.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     ReverseComponent,
     ReversePipe,
     TodolistComponent,
-    ChuckComponent
+    ChuckComponent,
+    FactDetailComponent
   ],
   imports: [
     BrowserModule,
