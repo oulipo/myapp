@@ -1,1 +1,17 @@
-<p>chuck works!</p>
+<h2>Chuck Norris Facts</h2>
+<select class="form-control" required [(ngModel)]="categorie">
+    <option *ngFor="let categorie of categories" [value]="categorie">{{ categorie }}</option>
+</select>
+
+<button (click)="showFacts()">Afficher</button>
+
+<div *ngIf="categorie">
+    <h3 class="is-size-3">{{ categorie | uppercase }}</h3>
+    <ul *ngIf="facts">
+        <li *ngFor="let fact of facts.result">
+            <div class="notification" style="margin-bottom: 1rem;">
+                <strong>{{ fact.value }}</strong>
+              </div>
+        </li>
+    </ul>
+</div>

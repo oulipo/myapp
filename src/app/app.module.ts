@@ -13,6 +13,7 @@ import { ReverseComponent } from './reverse/reverse.component';
 import { ReversePipe } from './reverse.pipe';
 import { TodolistComponent } from './todolist/todolist.component';
 import { ChuckComponent } from './chuck/chuck.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { ChuckComponent } from './chuck/chuck.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -26,4 +26,6 @@ https://api.chucknorris.io/
 
 service
 
+6- mini app quiz trivia pursuit avec api : https://opentdb.com/api_config.php
+
 
