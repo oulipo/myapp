@@ -8,6 +8,7 @@ import { ReverseComponent } from './reverse/reverse.component';
 import { ImcComponent } from './imc/imc.component';
 import { TodolistComponent } from './todolist/todolist.component';
 import { ChuckComponent } from './chuck/chuck.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 const routes: Routes = [
   { path: '', component: AccueilComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'imc', component: ImcComponent},
   { path: 'todolist', component:TodolistComponent},
   { path: 'chuck', component: ChuckComponent},
+  { path: 'quiz', component: QuizComponent},
 ];
 
 @NgModule({

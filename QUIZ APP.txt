@@ -1,0 +1,21 @@
+QUIZ APP
+1- initialisation du projet
+$ ng new quizapp
+  - routing yes
+  - css
+
+2- https://opentdb.com/api_config.php
+   => propriétés, méthodes, etc.
+   a- créer un service
+
+3- maquette HTML, UI + form
+
+   afficher la liste des questions + réponses proposées
+   un bouton de validation   
+
+4- fonction de validation du quiz + affichage du résultat
+
+swap, fisher-yates
+
+
+

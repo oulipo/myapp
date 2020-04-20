@@ -1,0 +1,30 @@
+<section class="hero is-info">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          QUIZ
+        </h1>
+      </div>
+    </div>
+  </section>
+<div *ngIf="qas">
+    <ul>
+        <li *ngFor="let qa of qas ; let i = index" style="margin: 1rem;">
+            <div class="box">
+                <p [innerHTML]="qa.question" class="is-size-4"></p>
+            <p><small>catégorie: {{ qa.categorie }}</small> | <small>{{ qa.difficulte }}</small></p>
+            <div *ngFor="let proposition of qa.propositions ; let j = index">
+                <input type="radio" name="r{{ i }}"
+                    [value]="proposition"
+                    [(ngModel)]="reponses[i]"
+                >&nbsp;
+                <label for="r{{ i }}" [innerHTML]="proposition"></label>
+            </div>
+            
+            </div>
+        </li>
+    </ul>
+    <button class="button" (click)="check()">Vérifier</button>&nbsp;
+    <button class="button" (click)="start()">Nouveau quiz</button>
+    <div *ngIf="note">Votre note : {{ note  }} / 10</div>
+</div>
